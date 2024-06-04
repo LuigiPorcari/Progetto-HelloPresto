@@ -1,0 +1,43 @@
+Federico -> presentazione PowerPoint
+         -> scaffolding
+         -> implementazione libreria Laravel Fortify -> accesso e registrazione con reindirizzamento a creazione foodbox
+         -> parola a Ivan;
+
+Ivan     -> carosello bootstrap header con autoplay
+         -> form di creazione foodbox da utente appena registrato;
+
+Nicolò   -> creazione box protetta da middleware, nome - desc - prezzo con validate, campi required
+         -> form creato in livewire per permettere preview immagini in tempo reale
+         -> reindirizzamento in home con session message dismissible;
+
+Ivan     -> descrizione home e ultime 6 foodbox a vista, realizzate con card di bootstrap
+         -> non visualizziamo ultima box inserita, deve essere accettata da revisore
+         -> presentazione footer con social, bottone diventa revisore
+         -> modale per inviare messaggio e mail su mailtrap;
+
+Nicolò   -> revisore deve accettare o rifiutare le foodbox, si può eseguire anche reset (wherenotnull)
+         -> zona revisore protetta da middleware;
+         -> notifica su zona revisore che va a 0;
+         -> immagini croppate con job grazie a implementazione di Spatie, libreria Laravel, dopo aver aggiunto imagick, estensione di php;
+
+Luigi    -> aggiunti altri tre job per aiutare revisore
+         -> GoogleVisionSafeSearch per creazione tag per maggior attenzione a dettaglio
+         -> GoogleVisionLabel per aggiunta watermark e censura volti con RemoveFaces
+
+CarloA   -> dopo accettazione troviamo articolo in home
+         -> dettaglio articolo con carosello per le immagini e pratica descrizione a lato
+         -> possibilità di visualizzare sito in 3 lingue, traduzioni fatte a mano;
+
+Luigi    -> commenti in dettaglio legati con 1-N a user e foodbox, devo accedere per commentare
+         -> se utente cancella account anche commenti e articoli vengono cancellati;
+
+CarloA   -> in navbar possiamo anche visualizzare le box per categorie, tradotte anche queste
+         -> possiamo anche effettuare una ricerca scrivendo a mano;
+
+Luigi    -> implementazione di Scout per funzioni di ricerca
+         -> paginator anche sui commenti;
+         -> sito responsive;
+
+Nicolò   -> apertura estensione chrome e visualizzazione viste;
+         -> implementazione di animazioni assente per non appensantire sito che ha già livewire e 4 jobs che funzionano in modo asincrono.
+
