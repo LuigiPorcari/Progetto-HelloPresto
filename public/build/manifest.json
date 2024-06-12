@@ -1,0 +1,29 @@
+{
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BOrJxbIo.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "public/img/backgroundstandard.png": {
+    "file": "assets/backgroundstandard-CkOsoZmD.png",
+    "src": "public/img/backgroundstandard.png"
+  },
+  "public/img/bg-header.jpg": {
+    "file": "assets/bg-header-BIcadALj.jpg",
+    "src": "public/img/bg-header.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-jvvbdimN.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BstCqs9k.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
