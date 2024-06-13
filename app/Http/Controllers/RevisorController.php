@@ -34,11 +34,11 @@ class RevisorController extends Controller
         $name = Auth::user()->name;
         $message = $request->input('message');
         $content = compact('email' , 'name' , 'message');
-        Mail::to('admin@hellopresto.it')->send(new BecomeRevisor($content , Auth::user()));
+        Mail::to('admin@hellopresto.it')->send(new BecomeRevisor($content));
         return redirect()->route('home')->with('message', __('ui.Complimenti'));
     }
-    public function makeRevisor(User $user){
-        Artisan::call('app:make-user-revisor',['email'=> $user->email]);
+    public function makeRevisor($email){
+        Artisan::call('app:make-user-revisor',['email'=> $email]);
         return redirect()->back();
     }
 
@@ -48,4 +48,3 @@ class RevisorController extends Controller
         return redirect()->back()->with("message" , __('ui.annullaMessagge'));
     }
 }
-

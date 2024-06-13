@@ -19,7 +19,7 @@
                 <p>Email: {{$content['email']}} </p>
                 <p>Messaggio: {{$content['message']}}</p>
                 <p>Per confermare la candidatura, premi qui!</p>
-                <a href="{{route('make.revisor', compact('user'))}}">Conferma candidatura</a>
+                <a href="{{route('make.revisor', ['email' => $content['email']])}}">Conferma candidatura</a>
             </div>
         </div>
     </div>

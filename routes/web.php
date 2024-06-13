@@ -13,7 +13,7 @@ Route::delete('/user/destroy' , [PublicController::class , 'destroyUser'])->name
 Route::middleware(["auth"])->group(function(){
     Route::get('/FoodBox/create',[FoodBoxController::class , 'create'])->name('FoodBox.create');
     Route::post('revisor/request' , [RevisorController::class , 'becomeRevisor'])->name('become.revisor');
-    Route::get('make/revisor/{user}' , [RevisorController::class , 'makeRevisor'])->name('make.revisor');
+    Route::get('make/revisor/{email}' , [RevisorController::class , 'makeRevisor'])->name('make.revisor');
     // Route::get('revisor/index' , [RevisorController::class , 'index'])->name('revisor.index');
     // Route::patch('accept/{foodbox}' , [RevisorController::class , 'accept'])->name('accept');
     // // LOGICA DI RIFIUTO ARTICOLI
