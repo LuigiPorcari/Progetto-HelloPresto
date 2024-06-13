@@ -39,7 +39,7 @@
                         @endif
                     </div>
                 @else
-                    <img src="{{Storage::url('/img/foodbox_noback.png')}}" alt="Nessuna foto inserita dall'utente">
+                    <img src='/img/foodbox_noback.png' alt="Nessuna foto inserita dall'utente">
                 @endif
             </div>
             <div class="col-md-6 col-12 bg-text shadow rounded-4 bg-form-card mt-5 mt-md-0">

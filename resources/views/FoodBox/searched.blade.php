@@ -10,7 +10,7 @@
             @forelse ($foodboxes as $foodbox)
                 <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
                     <div class="card rounded-5 shadow-lg" style="width: 18rem;">
-                        <img src="{{ $foodbox->images->isNotEmpty() ? $foodbox->images->first()->getUrl(500, 500) : Storage::url('/img/foodbox_noback.png') }}"
+                        <img src="{{ $foodbox->images->isNotEmpty() ? $foodbox->images->first()->getUrl(500, 500) : '/img/foodbox_noback.png' }}"
                             class="card-img-top rounded-top-5" alt="...">
                         <div class="card-body text-center">
                             <h5 class="card-title"><span class="fw-bold">{{ __('ui.nome') }}</span> {{ $foodbox->name }}

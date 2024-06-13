@@ -52,7 +52,7 @@
                     @endforeach
                 @else
                     <div class="col-6 col-md-4 text-center">
-                        <img src="{{ Storage::url('/img/foodbox_noback.png') }}" alt="immagine segnaposto"
+                        <img src='/img/foodbox_noback.png' alt="immagine segnaposto"
                             class="img-fluid">
                     </div>
                 @endif
